@@ -141,9 +141,6 @@
             <TargetOS Value="linux"/>
           </CodeGeneration>
           <Other>
-            <Verbosity>
-              <ShowHints Value="False"/>
-            </Verbosity>
             <CustomOptions Value="-dDEVELOPMENT"/>
           </Other>
         </CompilerOptions>
@@ -169,6 +166,7 @@
           </Parsing>
           <CodeGeneration>
             <SmartLinkUnit Value="True"/>
+            <RelocatableUnit Value="True"/>
             <TargetCPU Value="x86_64"/>
             <TargetOS Value="linux"/>
             <Optimizations>
@@ -216,11 +214,6 @@
             <TargetCPU Value="i386"/>
             <TargetOS Value="linux"/>
           </CodeGeneration>
-          <Linking>
-            <Debugging>
-              <UseLineInfoUnit Value="False"/>
-            </Debugging>
-          </Linking>
           <Other>
             <CustomOptions Value="-dDEVELOPMENT"/>
           </Other>
@@ -247,6 +240,7 @@
           </Parsing>
           <CodeGeneration>
             <SmartLinkUnit Value="True"/>
+            <RelocatableUnit Value="True"/>
             <TargetCPU Value="i386"/>
             <TargetOS Value="linux"/>
             <Optimizations>
@@ -294,11 +288,6 @@
             <TargetCPU Value="arm"/>
             <TargetOS Value="linux"/>
           </CodeGeneration>
-          <Linking>
-            <Debugging>
-              <UseLineInfoUnit Value="False"/>
-            </Debugging>
-          </Linking>
           <Other>
             <CustomOptions Value="-dDEVELOPMENT"/>
           </Other>
@@ -325,6 +314,7 @@
           </Parsing>
           <CodeGeneration>
             <SmartLinkUnit Value="True"/>
+            <RelocatableUnit Value="True"/>
             <TargetCPU Value="arm"/>
             <TargetOS Value="linux"/>
             <Optimizations>
@@ -369,7 +359,6 @@
             </SyntaxOptions>
           </Parsing>
           <CodeGeneration>
-            <RelocatableUnit Value="True"/>
             <TargetCPU Value="x86_64"/>
             <TargetOS Value="darwin"/>
           </CodeGeneration>
@@ -380,10 +369,6 @@
             </Options>
           </Linking>
           <Other>
-            <Verbosity>
-              <ShowNotes Value="False"/>
-              <ShowHints Value="False"/>
-            </Verbosity>
             <CustomOptions Value="-dDEVELOPMENT"/>
           </Other>
         </CompilerOptions>
@@ -408,6 +393,7 @@
             </SyntaxOptions>
           </Parsing>
           <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
             <RelocatableUnit Value="True"/>
             <TargetCPU Value="x86_64"/>
             <TargetOS Value="darwin"/>
@@ -457,22 +443,16 @@
             </SyntaxOptions>
           </Parsing>
           <CodeGeneration>
-            <RelocatableUnit Value="True"/>
             <TargetCPU Value="i386"/>
             <TargetOS Value="darwin"/>
           </CodeGeneration>
           <Linking>
-            <LinkSmart Value="True"/>
             <Options>
               <PassLinkerOptions Value="True"/>
               <LinkerOptions Value="-FmacOS\Frameworks -framework OpenAL -framework OpenGL -framework SDL2 -rpath @executable_path -rpath @executable_path\..\Frameworks"/>
             </Options>
           </Linking>
           <Other>
-            <Verbosity>
-              <ShowNotes Value="False"/>
-              <ShowHints Value="False"/>
-            </Verbosity>
             <CustomOptions Value="-dDEVELOPMENT"/>
           </Other>
         </CompilerOptions>
@@ -547,22 +527,16 @@
             </SyntaxOptions>
           </Parsing>
           <CodeGeneration>
-            <RelocatableUnit Value="True"/>
             <TargetCPU Value="arm"/>
             <TargetOS Value="darwin"/>
           </CodeGeneration>
           <Linking>
-            <LinkSmart Value="True"/>
             <Options>
               <PassLinkerOptions Value="True"/>
               <LinkerOptions Value="-FmacOS\Frameworks -framework OpenAL -framework OpenGL -framework SDL2 -rpath @executable_path -rpath @executable_path\..\Frameworks"/>
             </Options>
           </Linking>
           <Other>
-            <Verbosity>
-              <ShowNotes Value="False"/>
-              <ShowHints Value="False"/>
-            </Verbosity>
             <CustomOptions Value="-dDEVELOPMENT"/>
           </Other>
         </CompilerOptions>
@@ -916,15 +890,10 @@
       </SyntaxOptions>
     </Parsing>
     <CodeGeneration>
-      <RelocatableUnit Value="True"/>
       <TargetCPU Value="x86_64"/>
       <TargetOS Value="win64"/>
     </CodeGeneration>
     <Other>
-      <Verbosity>
-        <ShowNotes Value="False"/>
-        <ShowHints Value="False"/>
-      </Verbosity>
       <CustomOptions Value="-dDEVELOPMENT"/>
     </Other>
   </CompilerOptions>
